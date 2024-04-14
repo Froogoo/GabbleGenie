@@ -2,7 +2,7 @@
 Google_MHacks_24
 # Project Title: Conversation Flow Analysis and Visualization
 Description:
-This project aims to analyze and visualize conversation flows using natural language processing (NLP) techniques. It includes modules for data preprocessing, conversation analysis, decision tree generation, and interactive visualization.
+Utilize Google's new Gemini API to record your small talk interactions on the fly. You can pre-enter information about the people you're chatting with, such as known bios, as well as input the conversational environment and your desired end goals for the chat. It uses a decision tree to calculate the probability of achieving your conversation goals at each node. If the probability is low, you can backtrack to previous conversation nodes, and it will suggest alternative ways of conversing that are more likely to achieve your goals. It also informs you of the current potential social awkwardness level.
 # Features:
 Data Preprocessing: Cleansing and formatting raw conversation data.
 Conversation Analysis: Utilizes Gemini1.5 Pro to analyze conversation patterns and structures.
@@ -25,6 +25,6 @@ Generate decision trees in json with conversation_manager.py.
 Visualize decision trees interactively using user_flow.py.
 (future step)Enhance user experience with frontend_development.py.
 
-Contributors:
+# Contributors:
 Congxiao Wang, 
 Ziyi Jiang
