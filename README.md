@@ -26,5 +26,5 @@ Visualize decision trees interactively using user_flow.py.
 (future step)Enhance user experience with frontend_development.py.
 
 Contributors:
-Congxiao Wang
+Congxiao Wang, 
 Ziyi Jiang
