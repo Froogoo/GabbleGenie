@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "gray", "depth": 0, "font": {"color": "white"}, "id": 1, "label": "Zoe: Hi, I\u2019m Zoe, nice to meet you.\nAwk: 1, Goal: 0.1", "shape": "dot", "size": 30.0, "title": "Zoe: Hi, I\u2019m Zoe, nice to meet you.\nAwk: 1, Goal: 0.1"}, {"color": "gray", "depth": 1, "font": {"color": "white"}, "id": 2, "label": "Nic: Hi Zoe, I\u2019m Nic, Nic7834 on craigslist\nAwk: 1, Goal: 0.1", "shape": "dot", "size": 15.0, "title": "Nic: Hi Zoe, I\u2019m Nic, Nic7834 on craigslist\nAwk: 1, Goal: 0.1"}, {"color": "gray", "depth": 2, "font": {"color": "white"}, "id": 3, "label": "Zoe: So, ummh, can i see your guitar?\nAwk: 1, Goal: 0.2", "shape": "dot", "size": 10.0, "title": "Zoe: So, ummh, can i see your guitar?\nAwk: 1, Goal: 0.2"}, {"color": "gray", "depth": 3, "font": {"color": "white"}, "id": 4, "label": "Nic: Yes, why don\u2019t we go over that table to check?\nAwk: 1, Goal: 0.3", "shape": "dot", "size": 7.5, "title": "Nic: Yes, why don\u2019t we go over that table to check?\nAwk: 1, Goal: 0.3"}, {"color": "gray", "depth": 4, "font": {"color": "white"}, "id": 5, "label": "Zoe: Sure!\nAwk: 1, Goal: 0.3", "shape": "dot", "size": 6.0, "title": "Zoe: Sure!\nAwk: 1, Goal: 0.3"}, {"color": "gray", "depth": 5, "font": {"color": "white"}, "id": 6, "label": "Zoe: may i know why you sell your guitar?\nAwk: 1, Goal: 0.35", "shape": "dot", "size": 5.0, "title": "Zoe: may i know why you sell your guitar?\nAwk: 1, Goal: 0.35"}, {"color": "gray", "depth": 6, "font": {"color": "white"}, "id": 7, "label": "Nic: I\u2019m actually moving to another state, and I haven\u2019t use this guitar for a long time. But it\u2019s still pretty brand new.\nAwk: 1, Goal: 0.4", "shape": "dot", "size": 4.285714285714286, "title": "Nic: I\u2019m actually moving to another state, and I haven\u2019t use this guitar for a long time. But it\u2019s still pretty brand new.\nAwk: 1, Goal: 0.4"}, {"color": "gray", "depth": 7, "font": {"color": "white"}, "id": 8, "label": "Zoe: So you played it a long time ago? I bet you are an expert!\nAwk: 2, Goal: 0.3", "shape": "dot", "size": 3.75, "title": "Zoe: So you played it a long time ago? I bet you are an expert!\nAwk: 2, Goal: 0.3"}, {"color": "gray", "depth": 8, "font": {"color": "white"}, "id": 9, "label": "Nic: You mean playing guitar? I started playing from middle school.\nAwk: 2, Goal: 0.3", "shape": "dot", "size": 3.3333333333333335, "title": "Nic: You mean playing guitar? I started playing from middle school.\nAwk: 2, Goal: 0.3"}, {"color": "gray", "depth": 9, "font": {"color": "white"}, "id": 10, "label": "Zoe: ohhhhhhhh! That\u2019s so cool!\nAwk: 2, Goal: 0.25", "shape": "dot", "size": 3.0, "title": "Zoe: ohhhhhhhh! That\u2019s so cool!\nAwk: 2, Goal: 0.25"}, {"color": "gray", "depth": 10, "font": {"color": "white"}, "id": 11, "label": "Nic: Why you have an eye on this one, just curious.\nAwk: 2, Goal: 0.3", "shape": "dot", "size": 2.727272727272727, "title": "Nic: Why you have an eye on this one, just curious.\nAwk: 2, Goal: 0.3"}, {"color": "gray", "depth": 11, "font": {"color": "white"}, "id": 12, "label": "Zoe: umm\u2026\nAwk: 3, Goal: 0.2", "shape": "dot", "size": 2.5, "title": "Zoe: umm\u2026\nAwk: 3, Goal: 0.2"}, {"color": "gray", "depth": 12, "font": {"color": "white"}, "id": 13, "label": "Nic: It\u2019s okay, how long have you been playing guitar?\nAwk: 2, Goal: 0.3", "shape": "dot", "size": 2.3076923076923075, "title": "Nic: It\u2019s okay, how long have you been playing guitar?\nAwk: 2, Goal: 0.3"}, {"color": "gray", "depth": 13, "font": {"color": "white"}, "id": 14, "label": "Zoe: i learnt from a friend from a year ago.\nAwk: 2, Goal: 0.35", "shape": "dot", "size": 2.142857142857143, "title": "Zoe: i learnt from a friend from a year ago.\nAwk: 2, Goal: 0.35"}, {"color": "gray", "depth": 14, "font": {"color": "white"}, "id": 15, "label": "Nic: Oh, how\u2019s your experience with that\nAwk: 2, Goal: 0.4", "shape": "dot", "size": 2.0, "title": "Nic: Oh, how\u2019s your experience with that\nAwk: 2, Goal: 0.4"}, {"color": "gray", "depth": 15, "font": {"color": "white"}, "id": 16, "label": "Zoe: I\u2019d say pretty good, but it\u2019s a pity i cannot grab one for myself.\nAwk: 2, Goal: 0.4", "shape": "dot", "size": 1.875, "title": "Zoe: I\u2019d say pretty good, but it\u2019s a pity i cannot grab one for myself.\nAwk: 2, Goal: 0.4"}, {"color": "gray", "depth": 16, "font": {"color": "white"}, "id": 17, "label": "Nic: Ah, I see, it\u2019s your time now.\nAwk: 2, Goal: 0.45", "shape": "dot", "size": 1.7647058823529411, "title": "Nic: Ah, I see, it\u2019s your time now.\nAwk: 2, Goal: 0.45"}, {"color": "gray", "depth": 17, "font": {"color": "white"}, "id": 18, "label": "Zoe: you can tell! so ummh let\u2019s see it\nAwk: 2, Goal: 0.5", "shape": "dot", "size": 1.6666666666666667, "title": "Zoe: you can tell! so ummh let\u2019s see it\nAwk: 2, Goal: 0.5"}, {"color": "gray", "depth": 18, "font": {"color": "white"}, "id": 19, "label": "Nic: yea yea, here you go\nAwk: 1, Goal: 0.5", "shape": "dot", "size": 1.5789473684210527, "title": "Nic: yea yea, here you go\nAwk: 1, Goal: 0.5"}, {"color": "gray", "depth": 19, "font": {"color": "white"}, "id": 20, "label": "Zoe: it\u2019s beautiful! You much take care of it very well\nAwk: 1, Goal: 0.55", "shape": "dot", "size": 1.5, "title": "Zoe: it\u2019s beautiful! You much take care of it very well\nAwk: 1, Goal: 0.55"}, {"color": "gray", "depth": 20, "font": {"color": "white"}, "id": 21, "label": "Nic: Yes, I brought it at full price, $300, I could give you around $200.\nAwk: 1, Goal: 0.6", "shape": "dot", "size": 1.4285714285714286, "title": "Nic: Yes, I brought it at full price, $300, I could give you around $200.\nAwk: 1, Goal: 0.6"}, {"color": "gray", "depth": 21, "font": {"color": "white"}, "id": 22, "label": "Zoe: when did you buy it?\nAwk: 1, Goal: 0.6", "shape": "dot", "size": 1.3636363636363635, "title": "Zoe: when did you buy it?\nAwk: 1, Goal: 0.6"}, {"color": "gray", "depth": 22, "font": {"color": "white"}, "id": 23, "label": "Nic: 2 years ago, but I took it really seriously. It supported me through a very tough time.\nAwk: 1, Goal: 0.6", "shape": "dot", "size": 1.3043478260869565, "title": "Nic: 2 years ago, but I took it really seriously. It supported me through a very tough time.\nAwk: 1, Goal: 0.6"}, {"color": "gray", "depth": 23, "font": {"color": "white"}, "id": 24, "label": "Zoe: oh you said you haven\u2019t played it for a long time. So i guess it is an antique.\nAwk: 2, Goal: 0.55", "shape": "dot", "size": 1.25, "title": "Zoe: oh you said you haven\u2019t played it for a long time. So i guess it is an antique.\nAwk: 2, Goal: 0.55"}]);
+                  edges = new vis.DataSet([{"from": 1, "to": 2}, {"from": 2, "to": 3}, {"from": 3, "to": 4}, {"from": 4, "to": 5}, {"from": 5, "to": 6}, {"from": 6, "to": 7}, {"from": 7, "to": 8}, {"from": 8, "to": 9}, {"from": 9, "to": 10}, {"from": 10, "to": 11}, {"from": 11, "to": 12}, {"from": 12, "to": 13}, {"from": 13, "to": 14}, {"from": 14, "to": 15}, {"from": 15, "to": 16}, {"from": 16, "to": 17}, {"from": 17, "to": 18}, {"from": 18, "to": 19}, {"from": 19, "to": 20}, {"from": 20, "to": 21}, {"from": 21, "to": 22}, {"from": 22, "to": 23}, {"from": 23, "to": 24}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"borderWidth": 4, "borderWidthSelected": 6}, "edges": {"color": {"inherit": true}, "smooth": false}, "physics": {"barnesHut": {"gravitationalConstant": -8000, "springLength": 200}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

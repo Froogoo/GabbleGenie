@@ -1,0 +1,242 @@
+```json
+{
+  "nodeNumber": 1,
+  "text": "Hi, I’m Zoe, nice to meet you.",
+  "user": "Zoe",
+  "type": "greeting",
+  "awkwardnessLevel": 1,
+  "goalAchievementLikelihood": 0.1,
+  "children": [
+    {
+      "nodeNumber": 2,
+      "text": "Hi Zoe, I’m Nic, Nic7834 on craigslist",
+      "user": "Nic",
+      "type": "greeting",
+      "awkwardnessLevel": 1,
+      "goalAchievementLikelihood": 0.1,
+      "children": [
+        {
+          "nodeNumber": 3,
+          "text": "So, ummh, can i see your guitar?",
+          "user": "Zoe",
+          "type": "request",
+          "awkwardnessLevel": 1,
+          "goalAchievementLikelihood": 0.2,
+          "children": [
+            {
+              "nodeNumber": 4,
+              "text": "Yes, why don’t we go over that table to check?",
+              "user": "Nic",
+              "type": "agreement",
+              "awkwardnessLevel": 1,
+              "goalAchievementLikelihood": 0.3,
+              "children": [
+                {
+                  "nodeNumber": 5,
+                  "text": "Sure!",
+                  "user": "Zoe",
+                  "type": "agreement",
+                  "awkwardnessLevel": 1,
+                  "goalAchievementLikelihood": 0.3,
+                  "children": [
+                    {
+                      "nodeNumber": 6,
+                      "text": "may i know why you sell your guitar?",
+                      "user": "Zoe",
+                      "type": "question",
+                      "awkwardnessLevel": 1, 
+                      "goalAchievementLikelihood": 0.35, 
+                      "children": [ 
+                        {
+                          "nodeNumber": 7,
+                          "text": "I’m actually moving to another state, and I haven’t use this guitar for a long time. But it’s still pretty brand new.",
+                          "user": "Nic",
+                          "type": "explanation",
+                          "awkwardnessLevel": 1,
+                          "goalAchievementLikelihood": 0.4, 
+                          "children": [ 
+                            {
+                              "nodeNumber": 8,
+                              "text": "So you played it a long time ago? I bet you are an expert!",
+                              "user": "Zoe",
+                              "type": "smalltalk", 
+                              "awkwardnessLevel": 2, 
+                              "goalAchievementLikelihood": 0.3, 
+                              "children": [
+                                {
+                                  "nodeNumber": 9, 
+                                  "text": "You mean playing guitar? I started playing from middle school.",
+                                  "user": "Nic",
+                                  "type": "answer", 
+                                  "awkwardnessLevel": 2,
+                                  "goalAchievementLikelihood": 0.3, 
+                                  "children": [
+                                    {
+                                      "nodeNumber": 10,
+                                      "text": "ohhhhhhhh! That’s so cool!",
+                                      "user": "Zoe",
+                                      "type": "smalltalk", 
+                                      "awkwardnessLevel": 2, 
+                                      "goalAchievementLikelihood": 0.25, 
+                                      "children": [
+                                        {
+                                          "nodeNumber": 11,
+                                          "text": "Why you have an eye on this one, just curious.",
+                                          "user": "Nic",
+                                          "type": "question",
+                                          "awkwardnessLevel": 2, 
+                                          "goalAchievementLikelihood": 0.3, 
+                                          "children": [
+                                            {
+                                              "nodeNumber": 12,
+                                              "text": "umm…",
+                                              "user": "Zoe",
+                                              "type": "hesitation", 
+                                              "awkwardnessLevel": 3,
+                                              "goalAchievementLikelihood": 0.2,
+                                              "children": [ 
+                                                {
+                                                  "nodeNumber": 13,
+                                                  "text": "It’s okay, how long have you been playing guitar?",
+                                                  "user": "Nic",
+                                                  "type": "question",
+                                                  "awkwardnessLevel": 2, 
+                                                  "goalAchievementLikelihood": 0.3,
+                                                  "children": [ 
+                                                    {
+                                                      "nodeNumber": 14,
+                                                      "text": "i learnt from a friend from a year ago.", 
+                                                      "user": "Zoe", 
+                                                      "type": "answer",
+                                                      "awkwardnessLevel": 2,
+                                                      "goalAchievementLikelihood": 0.35,
+                                                      "children": [ 
+                                                        { 
+                                                          "nodeNumber": 15,
+                                                          "text": "Oh, how’s your experience with that",
+                                                          "user": "Nic", 
+                                                          "type": "question",
+                                                          "awkwardnessLevel": 2, 
+                                                          "goalAchievementLikelihood": 0.4,
+                                                          "children": [ 
+                                                            { 
+                                                              "nodeNumber": 16, 
+                                                              "text": "I’d say pretty good, but it’s a pity i cannot grab one for myself.", 
+                                                              "user": "Zoe",
+                                                              "type": "answer", 
+                                                              "awkwardnessLevel": 2, 
+                                                              "goalAchievementLikelihood": 0.4, 
+                                                              "children": [ 
+                                                                { 
+                                                                  "nodeNumber": 17,
+                                                                  "text": "Ah, I see, it’s your time now.",
+                                                                  "user": "Nic",
+                                                                  "type": "smalltalk",
+                                                                  "awkwardnessLevel": 2, 
+                                                                  "goalAchievementLikelihood": 0.45,
+                                                                  "children": [ 
+                                                                    {
+                                                                      "nodeNumber": 18,
+                                                                      "text": "you can tell! so ummh let’s see it",
+                                                                      "user": "Zoe",
+                                                                      "type": "request", 
+                                                                      "awkwardnessLevel": 2,
+                                                                      "goalAchievementLikelihood": 0.5, 
+                                                                      "children": [ 
+                                                                        {
+                                                                          "nodeNumber": 19,
+                                                                          "text": "yea yea, here you go",
+                                                                          "user": "Nic", 
+                                                                          "type": "agreement",
+                                                                          "awkwardnessLevel": 1, 
+                                                                          "goalAchievementLikelihood": 0.5, 
+                                                                          "children": [
+                                                                            {
+                                                                              "nodeNumber": 20,
+                                                                              "text": "it’s beautiful! You much take care of it very well",
+                                                                              "user": "Zoe",
+                                                                              "type": "compliment", 
+                                                                              "awkwardnessLevel": 1,
+                                                                              "goalAchievementLikelihood": 0.55, 
+                                                                              "children": [
+                                                                                { 
+                                                                                  "nodeNumber": 21,
+                                                                                  "text": "Yes, I brought it at full price, $300, I could give you around $200.",
+                                                                                  "user": "Nic",
+                                                                                  "type": "offer",
+                                                                                  "awkwardnessLevel": 1, 
+                                                                                  "goalAchievementLikelihood": 0.6, 
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "nodeNumber": 22,
+                                                                                      "text": "when did you buy it?", 
+                                                                                      "user": "Zoe",
+                                                                                      "type": "question", 
+                                                                                      "awkwardnessLevel": 1,
+                                                                                      "goalAchievementLikelihood": 0.6, 
+                                                                                      "children": [
+                                                                                        { 
+                                                                                          "nodeNumber": 23,
+                                                                                          "text": "2 years ago, but I took it really seriously. It supported me through a very tough time.", 
+                                                                                          "user": "Nic",
+                                                                                          "type": "answer",
+                                                                                          "awkwardnessLevel": 1, 
+                                                                                          "goalAchievementLikelihood": 0.6,
+                                                                                          "children": [ 
+                                                                                            {
+                                                                                              "nodeNumber": 24,
+                                                                                              "text": "oh you said you haven’t played it for a long time. So i guess it is an antique.",
+                                                                                              "user": "Zoe", 
+                                                                                              "type": "smalltalk",
+                                                                                              "awkwardnessLevel": 2, 
+                                                                                              "goalAchievementLikelihood": 0.55,
+                                                                                              "children": [
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                } 
+                                                                              ] 
+                                                                            }
+                                                                          ]
+                                                                        } 
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ] 
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    } 
+                                                  ]
+                                                } 
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ] 
+                        } 
+                      ]
+                    } 
+                  ]
+                }
+              ]
+            }
+          ]
+        } 
+      ]
+    } 
+  ]
+}
+``` 

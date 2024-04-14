@@ -1,0 +1,30 @@
+Zo: 19 years, female exchange student from Korea, sophomore, Aupair, recently got interested in music and decided to self-learn guitar, got an on-campus part-time job, working as a dining service worker,  to earn living expenses.
+Nic: 48 years, an upcoming retired accountant, cranky and socially awkward, French American, trying to have I’a career shift to focus on his stock market, and planning to have gardening work around the house
+
+Goal: contacted on craigslist, Zoe tried to get Nic’s listed guitar at an affordable price, but Zoe may struggle with English for small talk and bargain. Nic is pretty socially dead in most conversations with strangers, but he tried to get rid of his random gear, like guitar, for moving to another state.
+Environment: offline meet at the door of Costco to trade on Wednesday afternoon, a cold and windy day, pretty low customer flow
+
+2024-04-13 12:20:26.552556，Zoe: Hi, I’m Zoe, nice to meet you.
+2024-04-13 12:21:21.475396，Nic: Hi Zoe, I’m Nic, Nic7834 on craigslist
+2024-04-13 12:21:30.475396，Zoe: So, ummh, can i see your guitar?
+2024-04-13 12:21:48.475396，Nic: Yes, why don’t we go over that table to check?
+2024-04-13 12:22:04.552556，Zoe: Sure!
+2024-04-13 12:22:08.475396，Zoe: may i know why you sell your guitar?
+2024-04-13 12:22:10.475396，Nic:  I’m actually moving to another state, and I haven’t use this guitar for a long time. But it’s still pretty brand new.
+2024-04-13 12:22:13.475396，Zoe: So you played it a long time ago? I bet you are an expert!
+2024-04-13 12:22:20.552556，Nic: You mean playing guitar? I started playing from middle school.
+2024-04-13 12:22:28.475396，Zoe: ohhhhhhhh! That’s so cool! 
+2024-04-13 12:22:30.475396，Nic: Why you have an eye on this one, just curious.
+2024-04-13 12:22:40.475396，Zoe: umm…
+2024-04-13 12:22:51.475396，Nic: It’s okay, how long have you been playing guitar?
+2024-04-13 12:22:57.475396，Zoe: i learnt from a friend from a year ago.
+2024-04-13 12:23:01.475396，Nic: Oh, how’s your experience with that
+2024-04-13 12:23:08.475396，Zoe: I’d say pretty good, but it’s a pity i cannot grab one for myself.
+2024-04-13 12:23:14.475396，Nic: Ah, I see, it’s your time now.
+2024-04-13 12:23:18.475396，Zoe: you can tell! so ummh let’s see it
+2024-04-13 12:23:21.475396，Nic: yea yea, here you go
+2024-04-13 12:23:30.475396，Zoe: it’s beautiful! You much take care of it very well
+2024-04-13 12:23:35.475396，Nic: Yes, I brought it at full price, $300, I could give you around $200.
+2024-04-13 12:23:39.475396，Zoe: when did you buy it?
+2024-04-13 12:23:45.475396，Nic:  2 years ago, but I took it really seriously. It supported me through a very tough time.
+2024-04-13 12:23:49.475396，Zoe: oh you said you haven’t played it for a long time. So i guess it is an antique.

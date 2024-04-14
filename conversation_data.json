@@ -1,0 +1,139 @@
+{
+    "users": [
+        {
+            "name": "Zo",
+            "bio": "19 years, female exchange student from Korea, sophomore, Aupair, recently got interested in music and decided to self-learn guitar, got an on-campus part-time job, working as a dining service worker,  to earn living expenses."
+        },
+        {
+            "name": "Nic",
+            "bio": "48 years, an upcoming retired accountant, cranky and socially awkward, French American, trying to have I’a career shift to focus on his stock market, and planning to have gardening work around the house"
+        }
+    ],
+    "environment": "offline meet at the door of Costco to trade on Wednesday afternoon, a cold and windy day, pretty low customer flow",
+    "conversation_goals": [
+        "contacted on craigslist, Zoe tried to get Nic’s listed guitar at an affordable price, but Zoe may struggle with English for small talk and bargain. Nic is pretty socially dead in most conversations with strangers, but he tried to get rid of his random gear, like guitar, for moving to another state."
+    ],
+    "conversations": [
+        {
+            "date": "2024-04-13 12:20:26.552556",
+            "speaker": "Zoe",
+            "text": "Hi, I’m Zoe, nice to meet you."
+        },
+        {
+            "date": "2024-04-13 12:21:21.475396",
+            "speaker": "Nic",
+            "text":"Hi Zoe, I’m Nic, Nic7834 on craigslist"
+        },
+        {
+            "date": "2024-04-13 12:21:30.475396",
+            "speaker": "Zoe",
+            "text": "So, ummh, can i see your guitar?"
+        },
+        {
+            "date": "2024-04-13 12:21:48.475396",
+            "speaker": "Nic",
+            "text": "Yes, why don’t we go over that table to check?"
+        },
+        {
+            "date": "2024-04-13 12:22:04.552556",
+            "speaker": "Zoe",
+            "text": "Sure!"
+        },
+        {
+            "date": "2024-04-13 12:22:08.475396",
+            "speaker": "Zoe",
+            "text":"may i know why you sell your guitar?"
+        },
+        {
+            "date": "2024-04-13 12:22:10.475396",
+            "speaker": "Nic",
+            "text": " I’m actually moving to another state, and I haven’t use this guitar for a long time. But it’s still pretty brand new."
+        },
+        {
+            "date": "2024-04-13 12:22:13.475396",
+            "speaker": "Zoe",
+            "text": "So you played it a long time ago? I bet you are an expert!"
+        },
+        {
+            "date": "2024-04-13 12:22:20.552556",
+            "speaker": "Nic",
+            "text": "You mean playing guitar? I started playing from middle school."
+        },
+        {
+            "date": "2024-04-13 12:22:28.475396",
+            "speaker": "Zoe",
+            "text":"ohhhhhhhh! That’s so cool! "
+        },
+        {
+            "date": "2024-04-13 12:22:30.475396",
+            "speaker": "Nic",
+            "text": "Why you have an eye on this one, just curious."
+        },
+        {
+            "date": "2024-04-13 12:22:40.475396",
+            "speaker": "Zoe",
+            "text": "umm…"
+        },
+        {
+            "date": "2024-04-13 12:22:51.475396",
+            "speaker": "Nic",
+            "text":"It’s okay, how long have you been playing guitar?"
+        },
+        {
+            "date": "2024-04-13 12:22:57.475396",
+            "speaker": "Zoe",
+            "text": "i learnt from a friend from a year ago."
+        },
+        {
+            "date": "2024-04-13 12:23:01.475396",
+            "speaker": "Nic",
+            "text":"Oh, how’s your experience with that"
+        },
+        {
+            "date": "2024-04-13 12:23:08.475396",
+            "speaker": "Zoe",
+            "text": "I’d say pretty good, but it’s a pity i cannot grab one for myself."
+        },
+        {
+            "date": "2024-04-13 12:23:14.475396",
+            "speaker": "Nic",
+            "text":"Ah, I see, it’s your time now."
+        },
+        {
+            "date": "2024-04-13 12:23:18.475396",
+            "speaker": "Zoe",
+            "text": "you can tell! so ummh let’s see it"
+        },
+        {
+            "date": "2024-04-13 12:23:21.475396",
+            "speaker": "Nic",
+            "text":"yea yea, here you go"
+        },
+        {
+            "date": "2024-04-13 12:23:30.475396",
+            "speaker": "Zoe",
+            "text": "it’s beautiful! You much take care of it very well"
+        },
+        {
+            "date": "2024-04-13 12:23:35.475396",
+            "speaker": "Nic",
+            "text":"Yes, I brought it at full price, $300, I could give you around $200."
+        },
+        {
+            "date": "2024-04-13 12:23:39.475396",
+            "speaker": "Zoe",
+            "text": "when did you buy it?"
+        },
+        {
+            "date": "2024-04-13 12:23:45.475396",
+            "speaker": "Nic",
+            "text":" 2 years ago, but I took it really seriously. It supported me through a very tough time."
+        },
+        {
+            "date": "2024-04-13 12:23:49.475396",
+            "speaker": "Zoe",
+            "text": "oh you said you haven’t played it for a long time. So i guess it is an antique."
+        }
+
+    ]
+}
