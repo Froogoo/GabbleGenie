@@ -19,10 +19,10 @@ user_flow.py: Implements interactive visualization of decision trees.
 (future step)frontend_development.py: Develops frontend components for enhanced user experience.
 (future step)user_interaction.py: Orchestrates the entire workflow and provides user interaction.
 # Usage:
-Prepare conversation data in a suitable format, prefer wav.
-Use audio_preprocessing.py to analyze conversation patterns.
-Generate decision trees in json with conversation_manager.py.
-Visualize decision trees interactively using user_flow.py.
+Prepare conversation data in a suitable format, prefer wav.  
+Use audio_preprocessing.py to analyze conversation patterns.  
+Generate decision trees in json with conversation_manager.py.  
+Visualize decision trees interactively using user_flow.py.  
 (future step)Enhance user experience with frontend_development.py.
 
 # Contributors:
